@@ -7,7 +7,6 @@
 var app = require('../app');
 var debug = require('debug')('Play:server');
 var http = require('http');
-// var figlet = require('figlet');
 
 /**
  * Get port from environment and store in Express.
@@ -90,10 +89,12 @@ function onListening() {
   debug('Listening on ' + bind);
 
 // FIGLET
-//   console.log(figlet.textSync('Seafox Web', {
-//     font: 'stampatello',
-//     horizontalLayout: 'default',
-//     verticalLayout: 'default'
-// }));
+var figlet = require('figlet');
+
+  console.log(figlet.textSync('Seafox Web', {
+    font: 'stampatello',
+    horizontalLayout: 'default',
+    verticalLayout: 'default'
+}));
 
 }
