@@ -16,6 +16,6 @@
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
-    "figlet": "^1.2.0"
+    // "figlet": "^1.2.0"
   }
 }
