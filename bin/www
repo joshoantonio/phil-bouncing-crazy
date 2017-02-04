@@ -88,13 +88,13 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 
-// FIGLET
-var figlet = require('figlet');
+// FIGLET - comment out for heroku!!!
+// var figlet = require('figlet');
 
-  console.log(figlet.textSync('Seafox Web', {
-    font: 'stampatello',
-    horizontalLayout: 'default',
-    verticalLayout: 'default'
-}));
+//   console.log(figlet.textSync('Seafox Web', {
+//     font: 'stampatello',
+//     horizontalLayout: 'default',
+//     verticalLayout: 'default'
+// }));
 
 }
