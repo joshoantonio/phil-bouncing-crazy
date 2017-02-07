@@ -74,7 +74,13 @@ ul li a:hover, a:hover {
 	background: transparent !important;
 }
 
-.jumbo-purple {
+.jumbo-prices {
+	margin: 0 !important;
+	color: #fef !important;
+	background: #28c !important;
+}
+
+.jumbo-clients {
 	margin: 0 !important;
 	color: #ccc !important;
 	background: #123 url("/images/purple-bg.png") center 100% no-repeat;
@@ -89,6 +95,10 @@ ul li a:hover, a:hover {
 	.hide-sm {
 		display: none;
 	}
+}
+
+.contact-icon {
+	margin: 10px 0;
 }
 
 .client-icon {
@@ -122,3 +132,11 @@ ul li a:hover, a:hover {
 	color: #8df;
 }
 /* --- */
+
+.scrollToTop {
+	border-radius: 24px;
+    width:48px; height:48px;
+    background: url('/images/scrollUp.png') no-repeat center;
+    position:fixed; right:10px; bottom:5px;
+    display:none;
+}
