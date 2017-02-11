@@ -9,6 +9,16 @@ body {
 	overflow-x: hidden;
 }
 
+.jumbotron a {
+	color: #333 !important;
+	text-decoration: none !important;
+}
+
+.jumbotron a:hover {
+	color: #14b !important;
+	text-decoration: none !important;
+}
+
 .h1 {
 	font-family: 'Orbitron', sans-serif !important;
 	font-size: 52px !important;
@@ -68,16 +78,16 @@ ul li a:hover, a:hover {
 	background-size: cover;
 }
 
-.jumbo-clear {
+.jumbo-contact {
 	margin: 0 !important;
 	color: #ccc !important;
-	background: transparent !important;
+	background: #024 !important;
 }
 
 .jumbo-prices {
 	margin: 0 !important;
 	color: #fef !important;
-	background: #28c !important;
+	background: #157 !important;
 }
 
 .jumbo-clients {
@@ -88,7 +98,7 @@ ul li a:hover, a:hover {
 }
 
 .inter-jumbo p {
-	margin: 2em 4em;
+	margin: 1.2em 2.4em;
 }
 
 @media screen and (max-width: 431px) {

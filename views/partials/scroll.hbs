@@ -1,0 +1,52 @@
+<script>
+   $(document).ready(function() {
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 100) {
+            $('.scrollToTop').fadeIn();
+        }
+        else {
+            $('.scrollToTop').fadeOut();
+        }
+    });
+    $('.scrollToTop').click(function() {
+        $('html, body').animate({scrollTop : 0},600);
+        return false;
+    });
+});
+</script>
+<script>
+    $(document).ready(function (){
+        $(".scrollAbout").click(function (){
+            $('html, body').animate({
+                scrollTop: $(".jumbo-about").offset().top -80
+            }, 800);
+        });
+    });
+</script>
+<script>
+    $(document).ready(function (){
+        $(".scrollClients").click(function (){
+            $('html, body').animate({
+                scrollTop: $(".jumbo-clients").offset().top -49
+            }, 800);
+        });
+    });
+</script>
+<script>
+    $(document).ready(function (){
+        $(".scrollPrices").click(function (){
+            $('html, body').animate({
+                scrollTop: $(".jumbo-prices").offset().top -49
+            }, 800);
+        });
+    });
+</script>
+<script>
+    $(document).ready(function (){
+        $(".scrollContact").click(function (){
+            $('html, body').animate({
+                scrollTop: $(".jumbo-contact").offset().top
+            }, 800);
+        });
+    });
+</script>

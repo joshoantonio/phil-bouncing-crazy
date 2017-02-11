@@ -23,23 +23,7 @@
 	</div>
 	{{> footer}}
 	<a href="#" class="scrollToTop"></a>
-	<script>
-	$(document).ready(function() {
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > 100) {
-            $('.scrollToTop').fadeIn();
-        }
-        else {
-            $('.scrollToTop').fadeOut();
-        }
-    });
-    $('.scrollToTop').click(function() {
-        $('html, body').animate({scrollTop : 0},800);
-        return false;
-    });
-});
-	</script>
-
+	{{> scroll}}
 	<!-- Bootstrap JS -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
 	</script>
