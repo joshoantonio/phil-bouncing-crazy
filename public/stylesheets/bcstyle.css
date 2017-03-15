@@ -1,0 +1,187 @@
+/* CSS Document */
+
+body {
+	padding:0 0 370px 0;
+	font-family: 'Cabin', sans-serif;
+	background:#fef url('/images/background.png') no-repeat center fixed;
+	position:relative;
+	text-align:center;
+}
+
+/*Text styling*/
+a { text-decoration: underline; }
+p, ul, li, a, div {	font-family: 'Cabin', sans-serif; color: #b00; }
+h1, h2, h3, h4 { font-family: 'Boogaloo', cursive; }
+h1 { color:#c00; font-size:36px; }
+h2 { color:#fff; font-size:12px; }
+h3 { color:#b00; font-size:24px; }
+h4 { color:#c00; font-size:26px; }
+h5 { color:#999; font: "Lucida Sans Unicode", "Lucida Grande", sans-serif;	font-size: 12px; }
+
+hr {
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(200, 0, 0, 0), rgba(200, 0, 0, 0.75), rgba(200, 0, 0, 0));
+}
+
+#homePic {
+	margin: 0 auto;
+	padding: 10px 0;
+	width:70%;
+}
+.textbox {
+	width:85;
+	margin:0 auto;
+	padding:20px 0;
+	text-align:justify;
+}
+/*Layout*/
+.header {
+	background:#012;
+	border-bottom:1px solid #111;
+}
+.header a {
+	text-decoration: none;
+}
+.nav {
+	padding:8px 0;
+}
+#logo {
+	height: 64px;
+}
+.jumbotron {
+	margin-top:20px;
+}
+.footer {
+	height:auto;
+	background:#012;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align:center;
+	border-top:1px solid #333;
+}
+.footer h4 {
+	padding: 15px 0;
+}
+.footer h5 {
+	padding-bottom: 10px;
+}
+.footer a {
+	text-decoration: none;
+	color: #fef;
+}
+.footer a:hover {
+	color:#06c;
+}
+
+.frontpage {
+	margin: 10px auto;
+	max-height: 250px;
+}
+
+/*Social Media*/
+#fblink {
+	border-radius: 10;
+	padding:0 24px;
+}
+
+/*Icons*/
+#icons img {
+	margin: 10px 0;
+	width: 90px;
+	height: 90px;
+}
+.imgswap img:last-child {
+	display: none;
+}
+.imgswap:hover img:first-child {
+	display: none;
+}
+.imgswap:hover img:last-child {
+	display: inline-block;
+}
+
+/*Thumbnails*/
+.entirePush { padding-bottom:60px; }
+.thumbnail { height:420px; font-family: 'Cabin', sans-serif; }
+.thumbnail img { height:200px; padding-top:8px; }
+.thumbnail p { padding:0 8px; }
+.kids {	border-color:#09f; }
+.allage { border-color:#006; }
+.games { border-color:#f0c; }
+.funrun { border-color:#181; }
+.slides { border-color:#60f; }
+.pdeals, .pdeals1, .pdeals4, .pdeals1myo { border-color:#360; }
+.extras { border-color:#c30; }
+
+/* Device Handling */
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+    body {
+    background:url('/images/back-ipad.png') no-repeat center center fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+    }
+}
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+    body {
+	background:url('/images/back-ipad2.png') no-repeat center center fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+    }
+}
+/* iPhone 4 - (portrait) ---------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 2) and (orientation:portrait),
+only screen and (min-device-pixel-ratio : 2)  and (orientation:portrait){
+    body {
+	background:url('/images/back-phone.png') no-repeat center center fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+    }
+}
+/* iPhone 4 - (landscape) ---------- */
+@media screen and (-webkit-min-device-pixel-ratio : 2) and (orientation:landscape), screen and (min-device-pixel-ratio : 2) and (orientation:landscape){
+    body {
+	background:url('/images/back-phone2.png') no-repeat center center fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+    }
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+    body {
+    background:url('/images/back-phone.png') no-repeat center center fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+    }
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) and (max-width: 480px) {
+    body {
+	background:url('/images/back-phone2.png') no-repeat center center fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+    }
+}

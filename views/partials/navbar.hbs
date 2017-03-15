@@ -1,25 +1,54 @@
-<nav class="navbar navbar-inverse navbar-fixed-top header" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id))
+      return; js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+  }
+  (document, 'script', 'facebook-jssdk'));
+</script>
+
+<nav class="nav navbar-inverse header">
+  <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">Seafox Web</a>
+      <a href="index.html">
+        <img id="logo" src="/images/bc-logo.png" alt="Bouncing Crazy Logo"/>
+      </a>
     </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="/">Home</a></li>
-        <li><a href="#" class="scrollAbout">About</a></li>
-        <li><a href="#" class="scrollClients">Clients</a></li>
-        <li><a href="#" class="scrollPrices">Pricing</a></li>
-        <li><a href="#" class="scrollContact">Contact</a></li>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inflatables <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="kids.html">Kids Only</a></li>
+            <li><a href="allage.html">All Age</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="funrun.html">Fun Run</a></li>
+            <li><a href="slides.html">Slides</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="pdeals.html">Package Deals</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="extras.html">Extras</a></li>
+          </ul>
+        </li>
+        <li><a href="venues.html">Indoor Venues</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+      <ul class="nav navbar-nav navbar-right">
+        <a href="https://www.facebook.com/bouncingcrazy/"><img id="fblink" src="/images/fb.png" height="32px" alt="Facebook link" /></a>
+        <button class="btn btn-danger navbar-btn">Book now! 07816 910 152</button>
+      </ul>
+    </div>
+  </div>
 </nav>

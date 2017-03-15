@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Seafox Web' });
+  res.render('index', { title: 'Bouncing Crazy' });
 });
 
 module.exports = router;
