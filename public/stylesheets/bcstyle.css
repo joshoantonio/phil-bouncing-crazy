@@ -87,10 +87,13 @@ hr {
 }
 
 /*Icons*/
-#icons img {
-	margin: 10px 0;
+.imgswap img {
+	margin-top: 15px;
 	width: 90px;
 	height: 90px;
+}
+.imgswap img:first-child {
+	display: block;
 }
 .imgswap img:last-child {
 	display: none;
@@ -99,7 +102,7 @@ hr {
 	display: none;
 }
 .imgswap:hover img:last-child {
-	display: inline-block;
+	display: block;
 }
 
 /*Thumbnails*/
@@ -114,6 +117,10 @@ hr {
 .slides { border-color:#60f; }
 .pdeals, .pdeals1, .pdeals4, .pdeals1myo { border-color:#360; }
 .extras { border-color:#c30; }
+
+.contact-form p {
+	margin: 20px auto 5px;
+}
 
 /* Device Handling */
 
