@@ -2,6 +2,6 @@
 
 ## Dev stuff
 
-npm install
+Install dependencies: npm install
 
-npm start
+Run local environment: npm start
