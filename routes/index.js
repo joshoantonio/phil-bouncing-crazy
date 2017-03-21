@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 router.get('/about', function(req, res) {
   res.render('about', { title: 'About' })
 });
-router.get('/allage', function(req, res) {
+router.get('/disco-dome-hire-plymouth', function(req, res) {
   res.render('allage', { title: 'All Age' })
 });
 router.get('/contact', function(req, res) {
@@ -21,16 +21,16 @@ router.get('/generator-hire-plymouth', function(req, res) {
 router.get('/faqs', function(req, res) {
   res.render('faqs', { title: 'FAQs' })
 });
-router.get('/funrun', function(req, res) {
+router.get('/assault-course-hire-plymouth', function(req, res) {
   res.render('funrun', { title: 'Funrun' })
 });
 router.get('/games', function(req, res) {
   res.render('games', { title: 'Games' })
 });
-router.get('/kids', function(req, res) {
+router.get('/bouncy-castle-hire-plymouth', function(req, res) {
   res.render('kids', { title: 'Kids Only' })
 });
-router.get('/package-deals', function(req, res) {
+router.get('/party-package-hire', function(req, res) {
   res.render('pdeals', { title: 'Package Deals' })
 });
 router.get('/slides', function(req, res) {
