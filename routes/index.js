@@ -15,7 +15,7 @@ router.get('/allage', function(req, res) {
 router.get('/contact', function(req, res) {
   res.render('contact', { title: 'Contact Us' })
 });
-router.get('/generator-hire', function(req, res) {
+router.get('/generator-hire-plymouth', function(req, res) {
   res.render('extras', { title: 'Extras' })
 });
 router.get('/faqs', function(req, res) {
