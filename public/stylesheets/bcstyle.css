@@ -13,11 +13,13 @@ a { text-decoration: underline; }
 p, ul, li, a, div {	font-family: 'Cabin', sans-serif; color: #b00; }
 h1, h2, h3, h4 { font-family: 'Boogaloo', cursive; }
 h1 { color:#c00; font-size:36px; }
-h2 { color:#fff; font-size:12px; }
+h2 { color:#b00; font-size:24px; }
 h3 { color:#b00; font-size:24px; }
-h4 { color:#c00; font-size:26px; }
+h4 { color:#fff; font-size:12px; }
 h5 { color:#999; font: "Lucida Sans Unicode", "Lucida Grande", sans-serif;	font-size: 12px; }
-
+.title-split {
+	font-size: 28px;
+}
 hr {
 	border: 0;
 	height: 1px;
