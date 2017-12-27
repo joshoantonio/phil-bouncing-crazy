@@ -1,22 +1,20 @@
-/* CSS Document */
-
 body {
-	padding:0 0 370px 0;
+	padding: 0 0 370px 0;
 	font-family: 'Cabin', sans-serif;
-	background:#fef url('/images/background.png') no-repeat center fixed;
-	position:relative;
-	text-align:center;
+	background: #fef url('/images/background.png') no-repeat center fixed;
+	position: relative;
+	text-align: center;
 }
 
-/*Text styling*/
+/* Text styling */
 a { text-decoration: underline; }
 p, ul, li, a, div {	font-family: 'Cabin', sans-serif; color: #b00; }
 h1, h2, h3, h4 { font-family: 'Boogaloo', cursive; }
-h1 { color:#c00; font-size:36px; }
-h2 { color:#b00; font-size:24px; }
-h3 { color:#b00; font-size:24px; }
-h4 { color:#fff; font-size:12px; }
-h5 { color:#999; font: "Lucida Sans Unicode", "Lucida Grande", sans-serif;	font-size: 12px; }
+h1 { color: #c00; font-size:36px; }
+h2 { color: #b00; font-size:24px; }
+h3 { color: #b00; font-size:24px; }
+h4 { color: #fff; font-size:12px; }
+h5 { color: #999; font: "Lucida Sans Unicode", "Lucida Grande", sans-serif;	font-size: 12px; }
 .title-split {
 	font-size: 28px;
 }
@@ -29,39 +27,42 @@ hr {
 #homePic {
 	margin: 0 auto;
 	padding: 10px 0;
-	width:70%;
+	width: 70%;
 }
 .textbox {
-	width:85;
-	margin:0 auto;
-	padding:20px 0;
-	text-align:justify;
+	width: 85;
+	margin: 0 auto;
+	padding: 20px 0;
+	text-align: justify;
 }
-/*Layout*/
+/* Layout */
 .header {
-	background:#012;
-	border-bottom:1px solid #111;
+	background: #012;
+	border-bottom: 1px solid #111;
 }
 .header a {
 	text-decoration: none;
 }
 .nav {
-	padding:8px 0;
+	padding: 8px 0;
 }
-#logo {
-	height: 64px;
+.navbar-custom {
+	padding-top: 26px;
+}
+.logo {
+	height: 100px;
 }
 .jumbotron {
-	margin-top:20px;
+	margin-top: 20px;
 }
 .footer {
-	height:auto;
-	background:#012;
+	height: auto;
+	background: #012;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	text-align:center;
-	border-top:1px solid #333;
+	text-align: center;
+	border-top: 1px solid #333;
 }
 .footer h4 {
 	padding: 15px 0;
@@ -74,7 +75,7 @@ hr {
 	color: #fef;
 }
 .footer a:hover {
-	color:#06c;
+	color: #06c;
 }
 
 .frontpage {
@@ -82,13 +83,13 @@ hr {
 	max-height: 250px;
 }
 
-/*Social Media*/
+/* Social Media */
 #fblink {
+	margin-right: 12px;
 	border-radius: 10;
-	padding:0 24px;
 }
 
-/*Icons*/
+/* Icons */
 .imgswap img {
 	margin: 15px auto;
 	width: 90px;
@@ -107,18 +108,19 @@ hr {
 	display: block;
 }
 
-/*Thumbnails*/
-.entirePush { padding-bottom:60px; }
-.thumbnail { height:420px; font-family: 'Cabin', sans-serif; }
-.thumbnail img { height:200px; padding-top:8px; }
-.thumbnail p { padding:0 8px; }
-.kids {	border-color:#09f; }
-.allage { border-color:#006; }
-.games { border-color:#f0c; }
-.funrun { border-color:#181; }
-.slides { border-color:#60f; }
-.pdeals, .pdeals1, .pdeals4, .pdeals1myo { border-color:#360; }
-.extras { border-color:#c30; }
+/* Thumbnails */
+.entirePush { padding-bottom: 60px; }
+.thumbnail { height: 420px; font-family: 'Cabin', sans-serif; }
+.thumbnail img { height: 200px; padding-top: 8px; }
+.thumbnail h4 { font-size: 24px; color: #b00; }
+.thumbnail p { padding: 0 8px; }
+.kids {	border-color: #09f; }
+.allage { border-color: #006; }
+.games { border-color: #f0c; }
+.funrun { border-color: #181; }
+.slides { border-color: #60f; }
+.pdeals, .pdeals1, .pdeals4, .pdeals1myo { border-color: #360; }
+.extras { border-color: #c30; }
 
 .contact-form p {
 	margin: 20px auto 5px;
@@ -185,7 +187,7 @@ only screen and (min-device-pixel-ratio : 2)  and (orientation:portrait){
     }
 }
 /* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) and (max-width: 480px) {
+@media only screen and (min-width: 321px) and (max-width: 480px) {
     body {
 	background:url('/images/back-phone2.png') no-repeat center center fixed;
 	-webkit-background-size:cover;
