@@ -1,4 +1,7 @@
-<h1>{{message}}</h1>
-<!-- <h2>{{error.status}}</h2>
-<pre>{{error.stack}}</pre> -->
-<h2>Please click <a href="/">here</a> to go back to our Home page.</h2>
+<div class="error">
+    <h1>{{message}}</h1>
+    <h2>Error code: {{error.status}}</h2>
+    <!-- <pre>{{error.stack}}</pre> -->
+    <h2>Please click <a href="/">here</a> to bounce back to our Home page.</h2>
+</div>
+{{> castle }}
