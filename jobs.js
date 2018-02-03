@@ -1,8 +1,8 @@
 let cards = [
+    // { job: 'compare keywords to new list' },
     { job: 'weak <h*> tags, recommend adding "in plymouth..."' },
     { job: 'google map location and Facebook integration' },
     { job: 'youtube video integration (embed)' },
-    { job: 'compare keywords to new list' },
     { job: 'Kids Only => "Kids Bouncy Castle Hire Plymouth and across Devon" && Content provided' },
     { job: 'Enquire now button for product item listings, send ref to Phil' }, // Each unit has a link to my contact page with enquire now on it (hidden form)
     { job: 'Blog, requireds add, edit, and delete functionality (custom urls)' },
