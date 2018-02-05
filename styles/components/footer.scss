@@ -1,0 +1,13 @@
+.footer {
+	color: $white-0;
+	background: $color-accent;
+	width: 100%;
+	text-align: center;
+    a {
+        text-decoration: none;
+        color: $white-0;
+        &:hover {
+            color: $color-hover;
+        }
+    }
+}

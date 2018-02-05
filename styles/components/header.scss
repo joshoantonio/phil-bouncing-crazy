@@ -1,0 +1,32 @@
+.header {
+	background: $color-accent;
+	border-bottom: 1px solid $grey-0;
+    a {
+        text-decoration: none;
+    }
+}
+.nav {
+	padding: 8px 0;
+}
+.navbar-custom {
+	padding-top: 26px;
+}
+.logo {
+	height: 100px;
+}
+@media screen and (min-width: 992px) {
+    .call-btn-desktop {
+    	display: inline-block;
+    }
+    .call-btn-device {
+    	display: none;
+    }
+}
+@media screen and (max-width: 991px) {
+    .call-btn-desktop {
+        display: none;
+    }
+    .call-btn-device {
+        display: inline-block;
+    }
+}

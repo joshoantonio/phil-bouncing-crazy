@@ -1,0 +1,59 @@
+/* Shared styles */
+
+body {
+	padding: 0;
+	font-family: 'Cabin', sans-serif;
+	background: $white-1 url('/images/background.png') no-repeat center fixed;
+	position: relative;
+	text-align: center;
+}
+.app-body {
+	padding: 20px 0;
+}
+.error {
+}
+
+.jumbotron {
+	background: $white-1;
+	margin-top: 20px;
+	font-size: 14px;
+    h1, h2, h3 {
+        color: $color-main;
+    }
+}
+
+/* Text styling */
+a { text-decoration: underline; }
+h1, h2, h3, h4 { font-family: 'Boogaloo', cursive; }
+h1 { font-size: 36px; }
+h2 { font-size:24px; }
+h3 { font-size:24px; }
+h4 { font-size:12px; }
+h5 { font-size: 12px; }
+
+.page-title {
+	color: $color-main;
+}
+
+.title-split {
+	font-size: 28px;
+}
+
+.container {
+    h1 {
+	    margin: 0.4em auto 1.2em;
+    }
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(200, 0, 0, 0), rgba(200, 0, 0, 0.75), rgba(200, 0, 0, 0));
+}
+
+.textbox {
+	width: 85;
+	margin: 0 auto;
+	padding: 20px 0;
+	text-align: justify;
+}

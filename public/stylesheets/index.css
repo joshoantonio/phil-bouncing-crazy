@@ -1,0 +1,412 @@
+/* IMPORTS ONLY */
+/* Priority Imports */
+/* Variables */
+/* Shared styles */
+body {
+  padding: 0;
+  font-family: 'Cabin', sans-serif;
+  background: #eee url("/images/background.png") no-repeat center fixed;
+  position: relative;
+  text-align: center; }
+
+.app-body {
+  padding: 20px 0; }
+
+.jumbotron {
+  background: #eee;
+  margin-top: 20px;
+  font-size: 14px; }
+  .jumbotron h1, .jumbotron h2, .jumbotron h3 {
+    color: #d00; }
+
+/* Text styling */
+a {
+  text-decoration: underline; }
+
+h1, h2, h3, h4 {
+  font-family: 'Boogaloo', cursive; }
+
+h1 {
+  font-size: 36px; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 12px; }
+
+h5 {
+  font-size: 12px; }
+
+.page-title {
+  color: #d00; }
+
+.title-split {
+  font-size: 28px; }
+
+.container h1 {
+  margin: 0.4em auto 1.2em; }
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(200, 0, 0, 0), rgba(200, 0, 0, 0.75), rgba(200, 0, 0, 0)); }
+
+.textbox {
+  width: 85;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: justify; }
+
+/* Device Handling */
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  body {
+    background: url("/images/back-ipad.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  body {
+    background: url("/images/back-ipad2.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
+
+/* iPhone 4 - (portrait) ---------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-pixel-ratio: 2) and (orientation: portrait) {
+  body {
+    background: url("/images/back-phone.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
+
+/* iPhone 4 - (landscape) ---------- */
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), screen and (min-device-pixel-ratio: 2) and (orientation: landscape) {
+  body {
+    background: url("/images/back-phone2.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  body {
+    background: url("/images/back-phone.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  body {
+    background: url("/images/back-phone2.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
+
+.castle-container {
+  margin: 80px auto;
+  width: 240px;
+  position: relative;
+  height: 180px;
+  width: 200px; }
+
+.castle {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 180px;
+  width: 200px; }
+
+.back {
+  z-index: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 110px;
+  width: 180px;
+  background: #fe5;
+  border-top: 8px solid #fc3;
+  animation: back 1.6s ease infinite; }
+
+.t-left, .t-right {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  height: 180px;
+  width: 60px;
+  background: #fd4;
+  border-radius: 36% 36% 2% 2%; }
+
+.t-left {
+  left: 0;
+  transform-origin: bottom;
+  animation: towerL 1.6s ease infinite; }
+
+.t-right {
+  right: 0;
+  transform-origin: bottom;
+  animation: towerR 1.6s ease infinite; }
+
+.window {
+  background: #123;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  height: 40px;
+  width: 24px;
+  margin-left: -12px;
+  margin-top: -80px;
+  border-radius: 50% 50% 0 0;
+  box-sizing: border-box;
+  border: 3px solid #248;
+  border-bottom: 3px solid #ffc; }
+
+.turret {
+  z-index: 3;
+  position: static;
+  margin-left: -4px;
+  width: 68px;
+  height: 68px;
+  transform: rotate(45deg);
+  border-radius: 10% 25% 90% 25%;
+  background: #e40; }
+
+.base {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  height: 40px;
+  background: #fc3;
+  border-radius: 45% 45% 0 0;
+  animation: floor 1.6s ease infinite; }
+
+.shadow {
+  z-index: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 92px;
+  height: 20px;
+  width: 240px;
+  border-radius: 50%;
+  filter: blur(1px);
+  background: rgba(0, 0, 0, 0.5);
+  animation: shadow 1.6s ease infinite; }
+
+@keyframes floor {
+  0% {
+    transform: scaleY(1); }
+  50% {
+    transform: scaleY(0.7) scaleX(1.03) translateY(15px); }
+  100% {
+    transform: scaleY(1); } }
+
+@keyframes shadow {
+  0% {
+    opacity: 0.7;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scaleX(1.05); }
+  100% {
+    opacity: 0.7;
+    transform: translate(-50%, -50%); } }
+
+@keyframes towerL {
+  0% {
+    transform: rotate(0deg) translateY(-50%); }
+  50% {
+    transform: rotate(2deg) translateY(-48%) translateX(-7px); }
+  100% {
+    transform: rotate(0deg) translateY(-50%); } }
+
+@keyframes towerR {
+  0% {
+    transform: rotate(0deg) translateY(-50%); }
+  50% {
+    transform: rotate(-2deg) translateY(-48%) translateX(7px); }
+  100% {
+    transform: rotate(0deg) translateY(-50%); } }
+
+@keyframes back {
+  0% {
+    transform: scaleY(1) translate(-50%, -25%); }
+  50% {
+    transform: scaleY(0.9) translate(-50%, -25%); }
+  100% {
+    transform: scaleY(1) translate(-50%, -25%); } }
+
+/* Other Imports */
+.header {
+  background: #012;
+  border-bottom: 1px solid #111; }
+  .header a {
+    text-decoration: none; }
+
+.nav {
+  padding: 8px 0; }
+
+.navbar-custom {
+  padding-top: 26px; }
+
+.logo {
+  height: 100px; }
+
+@media screen and (min-width: 992px) {
+  .call-btn-desktop {
+    display: inline-block; }
+  .call-btn-device {
+    display: none; } }
+
+@media screen and (max-width: 991px) {
+  .call-btn-desktop {
+    display: none; }
+  .call-btn-device {
+    display: inline-block; } }
+
+.footer {
+  color: #fff;
+  background: #012;
+  width: 100%;
+  text-align: center; }
+  .footer a {
+    text-decoration: none;
+    color: #fff; }
+    .footer a:hover {
+      color: #06f; }
+
+.carousel {
+  margin: 0 auto;
+  max-width: 480px; }
+
+.img-carousel {
+  margin: 0 auto;
+  max-height: 364px;
+  max-width: 512px; }
+
+.breaker-img-pair img {
+  margin: 10px auto;
+  max-height: 250px; }
+
+/* Social Media */
+#fblink {
+  margin-right: 12px;
+  border-radius: 10%; }
+
+.contact-form p {
+  margin: 20px auto 5px; }
+
+/* Product tiles */
+.product-grid {
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 60px; }
+  .product-grid .product-tile {
+    position: relative;
+    color: #fff;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 4px;
+    box-shadow: 0 0 2px #333;
+    font-family: 'Cabin', sans-serif;
+    text-align: left;
+    padding-bottom: 56px; }
+    .product-grid .product-tile .product-img {
+      width: 100%;
+      background: #fff;
+      border: #333; }
+      .product-grid .product-tile .product-img img {
+        margin: 0 auto;
+        padding: 0;
+        height: 180px;
+        width: auto; }
+    .product-grid .product-tile .caption {
+      padding-bottom: 64px; }
+      .product-grid .product-tile .caption h3 {
+        margin: 12px; }
+    .product-grid .product-tile .caption > p, .product-grid .product-tile .price {
+      margin: 8px 12px; }
+    .product-grid .product-tile .price {
+      position: absolute;
+      bottom: 40px; }
+      .product-grid .product-tile .price span {
+        font-size: 24px;
+        font-weight: bold; }
+    .product-grid .product-tile .enquire-now {
+      position: absolute;
+      bottom: 0;
+      width: 100%; }
+      .product-grid .product-tile .enquire-now button {
+        display: block;
+        width: 100%;
+        height: 40px;
+        color: #333;
+        background: #eee;
+        border-color: #777; }
+        .product-grid .product-tile .enquire-now button:hover, .product-grid .product-tile .enquire-now button:focus {
+          color: #111;
+          background: #fff; }
+
+@media screen and (max-width: 991px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media screen and (max-width: 768px) {
+  .product-grid {
+    width: 480px;
+    grid-template-columns: repeat(2, 1fr); }
+  .product-tile img {
+    margin: 8px auto;
+    height: 120px; } }
+
+@media screen and (max-width: 480px) {
+  .product-grid {
+    width: 80vw;
+    grid-template-columns: 1fr; } }
+
+/* Page specific styles */
+.kids {
+  background: #09f;
+  border-color: #09f; }
+
+.allage {
+  background: #006;
+  border-color: #006; }
+
+.games {
+  background: #d3a;
+  border-color: #d3a; }
+
+.funrun {
+  background: #170;
+  border-color: #170; }
+
+.slides {
+  background: #50c;
+  border-color: #50c; }
+
+.pdeals {
+  background: #360;
+  border-color: #360; }
+
+.extras {
+  background: #c30;
+  border-color: #c30; }
