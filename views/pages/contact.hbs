@@ -13,15 +13,19 @@
 			<form class="col-sm-8 col-sm-offset-2 col-xs-12" action="MAILTO:bouncingcrazy@hotmail.com" method="post" accept-charset="UTF-8" enctype="text/plain" autocomplete="off" novalidate>
 				<div class="form-group">
 					<label>Name:</label>
-					<input class="form-control" type="text" name="name" placeholder="your name here"><br>
+					<input class="form-control" type="text" name="name" placeholder="E.g. John Smith"><br>
 				</div>
 				<div class="form-group">
 					<label>E-mail:</label>
-					<input class="form-control" type="text" name="mail" placeholder="youremail@.co.uk"><br>
+					<input class="form-control" type="text" name="mail" placeholder="E.g. youremail@company.co.uk"><br>
 				</div>
 				<div class="form-group">
 					<label>Which inflatable/package would you like to book?</label>
-					<input class="form-control" type="text" name="enquired" size="60" value={{ enquiredProduct }} />
+					{{#if enquiredProduct}}
+					<input class="form-control" type="text" name="enquired" value={{ enquiredProduct }} />
+					{{else}}
+					<input class="form-control" type="text" name="enquired" value="" />
+					{{/if}}
 				</div>
 				<div class="form-group">
 					<label>When would you like the inflatable/package for?</label>
@@ -33,13 +37,18 @@
 				</div>
 				<div class="form-group">
 					<label class="form-check-label">Is there electricity available?</label><br />
-					<input class="form-check-input" type="radio" name="1" value="Yes" /> Yes
-					<input class="form-check-input" type="radio" name="1" value="No" /> No
+					<input class="form-check-input" type="radio" name="electricity" value="Yes" /> Yes
+					<input class="form-check-input" type="radio" name="electricity" value="No" /> No
 				</div>
 				<div class="form-group">
 					<label class="form-check-label">If no would you like to add a petrol blower?</label><br />
-					<input class="form-check-input" type="radio" name="2" value="Yes" /> Yes
-					<input class="form-check-input" type="radio" name="2" value="No" /> No
+					<input class="form-check-input" type="radio" name="petrol_blower_addon" value="Yes" /> Yes
+					<input class="form-check-input" type="radio" name="petrol_blower_addon" value="No" /> No
+				</div>
+				<div class="form-group">
+					<label class="form-check-label">Add our Bluetooth DJ addon for only an additional £60?</label><br />
+					<input class="form-check-input" type="radio" name="bluetooth_DJ_addon" value="Yes" /> Yes
+					<input class="form-check-input" type="radio" name="bluetooth_DJ_addon" value="No" /> No
 				</div>
 				<div class="form-group">
 					<label>Home Address:</label>
@@ -57,7 +66,7 @@
 				</div>
 				<div class="form-group">
 					<label>Do you have any other requirements or notes?</label>
-					<input class="form-control" type="text" name="oth" size="60" placeholder="e.g. A 'tricky-to-traverse' driveway!"/>
+					<input class="form-control" type="text" name="oth" size="60" placeholder="E.g. A tricky to traverse driveway!"/>
 				</div>
 				<button class="btn btn-success" type="submit" value="Send Message" />Send in Email</button>
 				<button class="btn btn-danger" type="reset" value="Reset Fields" />Reset Fields</button>
