@@ -13,7 +13,10 @@
                 <p>They make things extra bouncy!</p>
                 <div class="price">Only <span>£25</span> (+<span>£15</span> for second)</div>
                 <div class="enquire-now">
-                    <button class="btn btn-info">Enquire now</button>
+                    <form action="/contact" method="get">
+                        <input type="hidden" name="enquiredProduct" value="Petrol_Blower_3.5hp">
+                        <button type="submit" class="btn btn-info">Enquire now</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -26,7 +29,10 @@
                 <p>If you have more to run than a blower this will run 1 electric blower</p>
                 <div class="price">Only <span>£35</span></div>
                 <div class="enquire-now">
-                    <button class="btn btn-info">Enquire now</button>
+                    <form action="/contact" method="get">
+                        <input type="hidden" name="enquiredProduct" value="Petrol_Generator">
+                        <button type="submit" class="btn btn-info">Enquire now</button>
+                    </form>
                 </div>
             </div>
         </div>

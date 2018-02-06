@@ -1,24 +1,4 @@
-let cards = [
-    // { job: 'compare keywords to new list' },
-    { job: 'weak <h*> tags, recommend adding "in plymouth..."' },
-    { job: 'google map location and Facebook integration' },
-    { job: 'youtube video integration (embed)' },
-    { job: 'Kids Only => "Kids Bouncy Castle Hire Plymouth and across Devon" && Content provided' },
-    { job: 'Enquire now button for product item listings, send ref to Phil' }, // Each unit has a link to my contact page with enquire now on it (hidden form)
-    { job: 'Blog, requireds add, edit, and delete functionality (custom urls)' },
-    { job: 'Bluetooth DJ addon with Disco lights = £60' },
-    { job: 'Landing page image => Carousel 4 images on ~5s each' }, // The main title photo to lap with some package deals and latest castle
-    { job: 'Fix Heroku => dedicated platform' },
-    { job: 'More images on landing page to break up text' },
-    { job: 'Rework product tiles to better represent "Bouncing Crazy" branding' },
-]
-
 // UPDATED CONTENT
-// Keywords:
-`
-bouncy castle hire, disco dome, sumo suits, kids play, Inflatable pillow,
-the dome plymouth, game plymouth, kids face painting,Plymouth bouncy castles, kidsplay, Mr bounce, Funtasia, didi car, bouncy castles for hire, ymca plymouth, hire bouncy castle, kids bouncy castle, disco dome hire, sumo suit, bouncy castle blower, adult bouncy castle hire, devon, woolwell centre, inflatable slide, didi car, inflatable sumo suits, didi cars, bouncy castle for hire, adultbox, bouncy castle hire cornwall, kam speakers, bouncy castle hire prices, face painting for kids, toddler bouncy castle, plymouth dome, hire a bouncy castle, bouncy slide hire, kids bouncy castles, face painters for hire, inflatable hire, indoor bouncy castle hire, princess bouncy castle hire,
-`
 `
 (Currently kids only)
 Kids Bouncy Castle Hire Plymouth and across Devon

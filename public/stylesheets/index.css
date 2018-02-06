@@ -301,16 +301,13 @@ hr {
   max-width: 512px; }
 
 .breaker-img-pair img {
-  margin: 10px auto;
+  margin: 24px auto;
   max-height: 250px; }
 
 /* Social Media */
 #fblink {
   margin-right: 12px;
   border-radius: 10%; }
-
-.contact-form p {
-  margin: 20px auto 5px; }
 
 /* Product tiles */
 .product-grid {
