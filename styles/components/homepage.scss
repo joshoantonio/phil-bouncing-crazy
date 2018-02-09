@@ -15,17 +15,14 @@
 	}
 }
 
-/* Social Media */
-#fblink {
-	margin-right: 12px;
-	border-radius: 10%;
-}
-
 .inflatables-direct-links {
 	margin: 0 auto 32px;
-	button {
+	.col-sm-4 {
+		margin-bottom: 12px;
+	}
+	a {
 		font-weight: bold;
-		padding: 1em;
+		padding: 12px 40px;
 		color: $white-1;
 		box-shadow: 0 0 2px $grey-0;
 		transition: ease-out 0.2s;
@@ -35,9 +32,23 @@
 		&:hover {
 			transition: ease-in 0.2s;
 		}
+		span {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
 	}
 }
 
 .youtube-video-player {
 	margin: 32px auto;
+	max-width: 600px;
+	height: 350px;
+	.iframe-container {
+		height: 100% !important;
+		iframe {
+			height: 100% !important;
+		}
+	}
 }

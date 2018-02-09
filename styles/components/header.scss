@@ -5,15 +5,27 @@
         text-decoration: none;
     }
 }
+
+.logo {
+	height: 100px;
+}
+
 .nav {
 	padding: 8px 0;
 }
 .navbar-custom {
 	padding-top: 26px;
 }
-.logo {
-	height: 100px;
+
+/* Social Media */
+#fblink {
+	margin-right: 12px;
+	border-radius: 10%;
+	@media screen and (max-width: 768px) {
+		margin-left: 12px;
+	}
 }
+
 @media screen and (min-width: 992px) {
     .call-btn-desktop {
     	display: inline-block;
@@ -28,5 +40,8 @@
     }
     .call-btn-device {
         display: inline-block;
+		max-width: 36px;
+		padding: 5px 8px;
+
     }
 }

@@ -64,8 +64,21 @@ hr {
   padding: 20px 0;
   text-align: justify; }
 
-#map {
-  height: 560px; }
+.iframe-container {
+  margin: 0 auto;
+  max-width: 800px; }
+  .iframe-container .parent {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0;
+    overflow: hidden; }
+    .iframe-container .parent iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important; }
 
 /* Device Handling */
 /* iPads (portrait) ----------- */
@@ -265,14 +278,22 @@ hr {
   .header a {
     text-decoration: none; }
 
+.logo {
+  height: 100px; }
+
 .nav {
   padding: 8px 0; }
 
 .navbar-custom {
   padding-top: 26px; }
 
-.logo {
-  height: 100px; }
+/* Social Media */
+#fblink {
+  margin-right: 12px;
+  border-radius: 10%; }
+  @media screen and (max-width: 768px) {
+    #fblink {
+      margin-left: 12px; } }
 
 @media screen and (min-width: 992px) {
   .call-btn-desktop {
@@ -284,7 +305,9 @@ hr {
   .call-btn-desktop {
     display: none; }
   .call-btn-device {
-    display: inline-block; } }
+    display: inline-block;
+    max-width: 36px;
+    padding: 5px 8px; } }
 
 .footer {
   color: #fff;
@@ -310,26 +333,34 @@ hr {
   margin: 24px auto;
   max-height: 250px; }
 
-/* Social Media */
-#fblink {
-  margin-right: 12px;
-  border-radius: 10%; }
-
 .inflatables-direct-links {
   margin: 0 auto 32px; }
-  .inflatables-direct-links button {
+  .inflatables-direct-links .col-sm-4 {
+    margin-bottom: 12px; }
+  .inflatables-direct-links a {
     font-weight: bold;
-    padding: 1em;
+    padding: 12px 40px;
     color: #eee;
     box-shadow: 0 0 2px #111;
     transition: ease-out 0.2s; }
-    .inflatables-direct-links button .focus, .inflatables-direct-links button:focus {
+    .inflatables-direct-links a .focus, .inflatables-direct-links a:focus {
       color: #555; }
-    .inflatables-direct-links button:hover {
+    .inflatables-direct-links a:hover {
       transition: ease-in 0.2s; }
+    .inflatables-direct-links a span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
 
 .youtube-video-player {
-  margin: 32px auto; }
+  margin: 32px auto;
+  max-width: 600px;
+  height: 350px; }
+  .youtube-video-player .iframe-container {
+    height: 100% !important; }
+    .youtube-video-player .iframe-container iframe {
+      height: 100% !important; }
 
 /* Product tiles */
 .product-grid {

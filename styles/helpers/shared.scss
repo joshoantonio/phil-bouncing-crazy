@@ -58,7 +58,20 @@ hr {
 	padding: 20px 0;
 	text-align: justify;
 }
-
-#map {
-	height: 560px;
+.iframe-container {
+	margin: 0 auto;
+	max-width: 800px;
+	.parent {
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		height: 0;
+		overflow: hidden;
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100% !important;
+			height: 100% !important;
+		}
+	}
 }
