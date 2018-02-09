@@ -20,3 +20,24 @@
 	margin-right: 12px;
 	border-radius: 10%;
 }
+
+.inflatables-direct-links {
+	margin: 0 auto 32px;
+	button {
+		font-weight: bold;
+		padding: 1em;
+		color: $white-1;
+		box-shadow: 0 0 2px $grey-0;
+		transition: ease-out 0.2s;
+		.focus, &:focus {
+			color: $grey-2;
+		}
+		&:hover {
+			transition: ease-in 0.2s;
+		}
+	}
+}
+
+.youtube-video-player {
+	margin: 32px auto;
+}

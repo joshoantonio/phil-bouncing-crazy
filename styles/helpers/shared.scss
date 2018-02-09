@@ -5,7 +5,6 @@ body {
 	font-family: 'Cabin', sans-serif;
 	background: $white-1 url('/images/background.png') no-repeat center fixed;
 	position: relative;
-	text-align: center;
 }
 .app-body {
 	padding: 20px 0;
@@ -15,20 +14,22 @@ body {
 
 .jumbotron {
 	background: $white-1;
-	margin-top: 20px;
-	font-size: 14px;
     h1, h2, h3 {
         color: $color-main;
     }
+	p {
+		font-size: 16px;
+	}
 }
 
 /* Text styling */
 a { text-decoration: underline; }
+p { font-size: 16px; }
 h1, h2, h3, h4 { font-family: 'Boogaloo', cursive; }
-h1 { font-size: 36px; }
-h2 { font-size:24px; }
-h3 { font-size:24px; }
-h4 { font-size:12px; }
+h1 { font-size: 36px; margin: 0.4em auto !important; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 12px; }
 h5 { font-size: 12px; }
 
 .page-title {
@@ -56,4 +57,8 @@ hr {
 	margin: 0 auto;
 	padding: 20px 0;
 	text-align: justify;
+}
+
+#map {
+	height: 560px;
 }

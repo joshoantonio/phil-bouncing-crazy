@@ -6,31 +6,34 @@ body {
   padding: 0;
   font-family: 'Cabin', sans-serif;
   background: #eee url("/images/background.png") no-repeat center fixed;
-  position: relative;
-  text-align: center; }
+  position: relative; }
 
 .app-body {
   padding: 20px 0; }
 
 .jumbotron {
-  background: #eee;
-  margin-top: 20px;
-  font-size: 14px; }
+  background: #eee; }
   .jumbotron h1, .jumbotron h2, .jumbotron h3 {
     color: #d00; }
+  .jumbotron p {
+    font-size: 16px; }
 
 /* Text styling */
 a {
   text-decoration: underline; }
 
+p {
+  font-size: 16px; }
+
 h1, h2, h3, h4 {
   font-family: 'Boogaloo', cursive; }
 
 h1 {
-  font-size: 36px; }
+  font-size: 36px;
+  margin: 0.4em auto !important; }
 
 h2 {
-  font-size: 24px; }
+  font-size: 30px; }
 
 h3 {
   font-size: 24px; }
@@ -60,6 +63,9 @@ hr {
   margin: 0 auto;
   padding: 20px 0;
   text-align: justify; }
+
+#map {
+  height: 560px; }
 
 /* Device Handling */
 /* iPads (portrait) ----------- */
@@ -309,6 +315,22 @@ hr {
   margin-right: 12px;
   border-radius: 10%; }
 
+.inflatables-direct-links {
+  margin: 0 auto 32px; }
+  .inflatables-direct-links button {
+    font-weight: bold;
+    padding: 1em;
+    color: #eee;
+    box-shadow: 0 0 2px #111;
+    transition: ease-out 0.2s; }
+    .inflatables-direct-links button .focus, .inflatables-direct-links button:focus {
+      color: #555; }
+    .inflatables-direct-links button:hover {
+      transition: ease-in 0.2s; }
+
+.youtube-video-player {
+  margin: 32px auto; }
+
 /* Product tiles */
 .product-grid {
   margin: 0 auto;
@@ -338,7 +360,8 @@ hr {
     .product-grid .product-tile .caption {
       padding-bottom: 64px; }
       .product-grid .product-tile .caption h3 {
-        margin: 12px; }
+        margin-left: 12px;
+        margin-right: 12px; }
     .product-grid .product-tile .caption > p, .product-grid .product-tile .price {
       margin: 8px 12px; }
     .product-grid .product-tile .price {
