@@ -11,6 +11,9 @@ body {
 .app-body {
   padding: 20px 0; }
 
+.error {
+  padding-bottom: 80px; }
+
 .jumbotron {
   background: #eee; }
   .jumbotron h1, .jumbotron h2, .jumbotron h3 {
@@ -331,7 +334,15 @@ hr {
 
 .breaker-img-pair img {
   margin: 24px auto;
-  max-height: 250px; }
+  max-height: 250px;
+  float: none; }
+  @media screen and (min-width: 1200px) {
+    .breaker-img-pair img {
+      min-height: 250px; }
+      .breaker-img-pair img:nth-of-type(2n + 1) {
+        float: left; }
+      .breaker-img-pair img:nth-of-type(2n) {
+        float: right; } }
 
 .inflatables-direct-links {
   margin: 0 auto 32px; }
@@ -357,6 +368,9 @@ hr {
   margin: 32px auto;
   max-width: 600px;
   height: 350px; }
+  @media screen and (max-width: 991px) {
+    .youtube-video-player {
+      height: 150px; } }
   .youtube-video-player .iframe-container {
     height: 100% !important; }
     .youtube-video-player .iframe-container iframe {

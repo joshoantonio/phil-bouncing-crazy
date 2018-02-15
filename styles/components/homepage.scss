@@ -12,6 +12,16 @@
 	img {
 		margin: 24px auto;
 		max-height: 250px;
+		float: none;
+		@media screen and (min-width: 1200px) {
+			min-height: 250px;
+			&:nth-of-type(2n + 1) {
+				float: left;
+			}
+			&:nth-of-type(2n) {
+				float: right;
+			}
+		}
 	}
 }
 
@@ -45,6 +55,9 @@
 	margin: 32px auto;
 	max-width: 600px;
 	height: 350px;
+	@media screen and (max-width: 991px) {
+		height: 150px;
+	}
 	.iframe-container {
 		height: 100% !important;
 		iframe {
