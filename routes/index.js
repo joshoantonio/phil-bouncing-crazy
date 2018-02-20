@@ -15,7 +15,7 @@ router.get('/disco-dome-hire-plymouth', function(req, res) {
 router.get('/contact', function(req, res) {
     res.render('pages/contact', { title: 'Contact Us', enquiredProduct: req.query.enquiredProduct })
 });
-router.get('/generator-hire-plymouth', function(req, res) {
+router.get('/mobile-stage-hire-plymouth', function(req, res) {
     res.render('pages/extras', { title: 'Extras' })
 });
 router.get('/faqs', function(req, res) {
