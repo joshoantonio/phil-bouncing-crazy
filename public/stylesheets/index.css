@@ -475,3 +475,6 @@ hr {
 .extras {
   background: #c30;
   border-color: #c30; }
+
+.vera-packages .price {
+  font-weight: bold; }
