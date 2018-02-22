@@ -27,7 +27,7 @@ router.get('/assault-course-hire-plymouth-devon-cornwall', function(req, res) {
 router.get('/games', function(req, res) {
     res.render('pages/games', { title: 'Games' })
 });
-router.get('/kids-bouncy-castle-hire-plymouth-devon-cornwall', function(req, res) {
+router.get('/bouncy-castle-hire-plymouth-devon-cornwall', function(req, res) {
     res.render('pages/kids', { title: 'Kids Only' })
 });
 router.get('/party-package-hire-plymouth-devon-cornwall', function(req, res) {
