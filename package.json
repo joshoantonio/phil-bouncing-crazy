@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "heroku-prebuild": "npm install -f",
+    "heroku-postbuild": "npm start"      
     "start": "node ./bin/www"
   },
   "dependencies": {
