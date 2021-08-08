@@ -4,13 +4,11 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
-//Added requires
 var expressHbs = require('express-handlebars');
-
-var routes = require('./routes/index');
-
 var app = express();
+var routes = require('./routes/index');
+var bodyParser = require('body-parser');
+
 
 // view engine setup
 app.engine('.hbs', expressHbs({defaultLayout: 'layout', extname: '.hbs'}));
@@ -58,4 +56,8 @@ app.use(function(err, req, res, next) {
 });
 
 
-module.exports = app;
+// start the server listening for requests
+app.listen(process.env.PORT || 3000,
+	() => console.log("Server is running..."));
+
+	module.exports = app;
