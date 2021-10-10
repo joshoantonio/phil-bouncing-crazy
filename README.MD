@@ -4,14 +4,15 @@
 
 Install dependencies: npm install
 
-Run local environment:
-1. type - node app.js
-2. and then go to localhost in browser
+Running the local enviroment:
+1. CD into the project directory
+2. type -> node app.js (this runs the server)
+3. then go to 'localhost:3000' into the browser
 
 To change the credentials:
-1. view remote $ git remote -v
-2. to change remote $ git remote set-url origin <url>
+1. To view the remote repository -> git remote -v
+2. to change remote repository -> git remote set-url origin <url>
 
-Branches:
+To view/change a branch:
 git branch
 git checkout branch
