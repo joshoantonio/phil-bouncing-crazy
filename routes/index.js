@@ -9,15 +9,15 @@ router.get('/', function(req, res, next) {
 router.get('/about', function(req, res) {
     res.render('pages/about', { title: 'About' })
 });
-router.get('/disco-dome-hire-plymouth-devon-cornwall', function(req, res) {
+router.get('/all-ages', function(req, res) {
     res.render('pages/allage', { title: 'All Age' })
 });
 router.get('/contact', function(req, res) {
     res.render('pages/contact', { title: 'Contact Us', enquiredProduct: req.query.enquiredProduct })
 });
-router.get('/mobile-stage-hire-plymouth-devon-cornwall', function(req, res) {
+/*router.get('/mobile-stage-hire-plymouth-devon-cornwall', function(req, res) {
     res.render('pages/extras', { title: 'Extras' })
-});
+});*/
 router.get('/faqs', function(req, res) {
     res.render('pages/faqs', { title: 'FAQs' })
 });
@@ -36,8 +36,8 @@ router.get('/party-package-hire-plymouth-devon-cornwall', function(req, res) {
 router.get('/slide-hire-plymouth-devon-cornwall', function(req, res) {
     res.render('pages/slides', { title: 'Slides' })
 });
-router.get('/caravan-photobooth-hire-plymouth-devon-cornwall', function(req, res) {
-    res.render('pages/vera', { title: 'Vintage Vera' })
+router.get('/mobile-stage-hire-plymouth-devon-cornwall', function(req, res) {
+    res.render('pages/stages', { title: 'Vintage Vera' })
 });
 router.get('/admin', function(req, res) {
     res.render('pages/admin', { title: 'Admin' })

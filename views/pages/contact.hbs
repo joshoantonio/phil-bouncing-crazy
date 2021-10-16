@@ -25,23 +25,40 @@
 				</div>
 				<div class="form-group">
 					<label>E-mail:</label>
-					<input class="form-control" type="text" name="mail" placeholder="E.g. youremail@company.co.uk"><br>
+					<input class="form-control" type="text" name="email" placeholder="E.g. youremail@company.co.uk"><br>
 				</div>
 				<div class="form-group">
 					<label>Which inflatable/package would you like to book?</label>
 					{{#if enquiredProduct}}
-					<input class="form-control" type="text" name="enquired" value={{ enquiredProduct }} />
+					<input class="form-control" type="text" name="inquiry for" value={{ enquiredProduct }} />
 					{{else}}
-					<input class="form-control" type="text" name="enquired" value="" />
+					<input class="form-control" type="text" name="inquiry for" value="" />
 					{{/if}}
 				</div>
 				<div class="form-group">
 					<label>When would you like the inflatable/package for?</label>
-					<input class="form-control" type="text" name="main" size="60" />
+					<input class="form-control" type="text" name="when" size="60" />
+				</div>
+				<div class="form-group">
+					<label>What time window can I drop the castle to you?</label>
+					<input class="form-control" type="text" name="drop off time" size="60" />
+				</div>
+				<div class="form-group">
+					<label>What time is the party duration?</label>
+					<input class="form-control" type="text" name="party duration" size="60" />
 				</div>
 				<div class="form-group">
 					<label>What surface will inflatables be on?</label>
-					<input class="form-control" type="text" name="oth" />
+					<input class="form-control" type="text" name="inflatable floor surface" />
+				</div>
+				<div class="form-group">
+					<label>How many steps lead to your garden?</label>
+					<input class="form-control" type="text" name="steps to garden" />
+				</div>
+				<div class="form-group">
+					<label>Do you have a side access?</label><br />
+					<input class="form-check-input" type="radio" name="sideAccess" value="Yes" /> Yes
+					<input class="form-check-input" type="radio" name="sideAccess" value="No" /> No
 				</div>
 				<div class="form-group">
 					<label class="form-check-label">Is there electricity available?</label><br />
@@ -74,7 +91,7 @@
 				</div>
 				<div class="form-group">
 					<label>Do you have any other requirements or notes?</label>
-					<input class="form-control" type="text" name="oth" size="60" placeholder="E.g. A tricky to traverse driveway!"/>
+					<input class="form-control" type="text" name="extra requirements" size="60" placeholder="E.g. A tricky to traverse driveway!"/>
 				</div>
 				<button class="btn btn-success" type="submit" value="Send Message" />Send in Email</button>
 				<button class="btn btn-danger" type="reset" value="Reset Fields" />Reset Fields</button>
