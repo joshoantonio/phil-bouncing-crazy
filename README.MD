@@ -14,5 +14,11 @@ To change the credentials:
 2. to change remote repository -> git remote set-url origin <url>
 
 To view/change a branch:
-git branch
-git checkout branch
+1. git branch
+2. git checkout branch
+  
+Useful git things:
+  - git status
+  - git add .
+  - git commit -m "<comment>
+  - git push
